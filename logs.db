@@ -1,1 +1,17 @@
+# create_logs_db.py
+import sqlite3
+
+conn = sqlite3.connect("logs.db")
+cur = conn.cursor()
+
+cur.execute("""
+CREATE TABLE IF NOT EXISTS fire_logs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    timestamp TEXT,
+    event TEXT
+)
+""")
+
+conn.commit()
+conn.close()
 
