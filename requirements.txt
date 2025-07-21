@@ -1,1 +1,19 @@
+# Core Libraries
+opencv-python
+streamlit
+numpy
+tensorflow
+
+# Email/SMS Alerts
+smtplib     # built-in (no need to install separately)
+email       # built-in
+twilio
+
+# Database
+firebase-admin
+google-cloud-firestore
+sqlite3      # built-in
+
+# Others
+Pillow
 
